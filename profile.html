@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Munmun Hazra - Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    .cover-photo {
+      height: 300px;
+      margin: 6px;
+      background: url('asset/files/cover.jpg') no-repeat center center/cover;
+    }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+      margin-top: -75px;
+    }
+    .social-icons a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    .social-icons a:hover {
+      color: #d63384;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s ease, opacity 0.5s ease;
+      cursor: pointer;
+      opacity: 0;
+    }
+    .gallery-img.animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gallery-img:hover {
+      transform: scale(1.05);
+    }
+    .modal-img {
+      width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 2rem 0;
+      margin-top: 2rem;
+    }
+    .footer a {
+      color: #333;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      color: #d63384;
+    }
+    @media (max-width: 576px) {
+      .cover-photo {
+        height: 200px;
+      }
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+      }
+      .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+      }
+      .gallery-img {
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <!-- Cover Photo -->
+    <div class="cover-photo"></div>
+
+    <!-- Profile Section -->
+    <div class="container text-center">
+      <img src="asset/files/profile.jpg" class="profile-pic" alt="Profile Picture" />
+      <h2 class="mt-3">Munmun Hazra</h2>
+      <p class="text-muted">Creative Professional | Makeup Artist | Designer</p>
+      <p class="lead">Hi, I’m <strong>Munmun Hazra</strong>, a passionate Makeup Artist, Mehendi, and Kolka Designer dedicated to bringing out the best in every look. With a love for traditional and modern beauty styles, I aim to create timeless beauty.</p>
+      <p class="lead">💄 <strong>Bridal and Party Makeup</strong> – enhancing natural beauty with flawless techniques</p>
+      <p class="lead">🌿 <strong>Mehendi Art</strong> – intricate, elegant designs for weddings, festivals, and special events</p>
+      <p class="lead">🎨 <strong>Kolka Designs</strong> – beautifully crafted forehead art to complete the perfect traditional look</p>
+      <p class="lead">I believe every client is unique, and my goal is to create personalized, graceful styles that reflect your personality and occasion.</p>
+
+      <!-- Social Media Links -->
+      <div class="social-icons my-3">
+        <a href="https://www.facebook.com/share/1AvuDM1UpV/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/munmun_hazra5?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- Work Tabs -->
+    <div class="container mt-5">
+      <ul class="nav nav-tabs" id="workTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="kolka-tab" data-bs-toggle="tab" data-bs-target="#kolka" type="button" role="tab">Kolka</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="mehendi-tab" data-bs-toggle="tab" data-bs-target="#mehendi" type="button" role="tab">Mehendi</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="makeover-tab" data-bs-toggle="tab" data-bs-target="#makeover" type="button" role="tab">Makeover</button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="workTabsContent">
+        <!-- Kolka Tab -->
+        <div class="tab-pane fade show active" id="kolka" role="tabpanel">
+          <div class="row mt-4">
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k1.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k2.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k3.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k4.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k5.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k6.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k7.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/kolka/k8.jpg" class="gallery-img" alt="Kolka Design">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mehendi Tab -->
+        <div class="tab-pane fade" id="mehendi" role="tabpanel">
+          <div class="row mt-4">
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh1.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh2.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh3.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh4.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh5.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh6.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh7.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mahendi/mh8.jpg" class="gallery-img" alt="Mehendi Design">
+            </div>
+          </div>
+        </div>
+
+        <!-- Makeover Tab -->
+        <div class="tab-pane fade" id="makeover" role="tabpanel">
+          <div class="row mt-4">
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo1.jpg" class="gallery-img" alt="Makeover">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo2.jpg" class="gallery-img" alt="Makeover">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo3.jpg" class="gallery-img" alt="Makeover">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo4.jpg" class="gallery-img" alt="Makeover">
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo5.jpg" class="gallery-img" alt="Makeover">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo6.jpg" class="gallery-img" alt="Makeover">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo7.jpg" class="gallery-img" alt="Makeover">
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+              <img src="asset/files/mackup/mo8.jpg" class="gallery-img" alt="Makeover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <h4>Contact Me</h4>
+        <p>Email: <a href="mailto:munmunhazra@example.com">munmunhazra@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
+        <div class="social-icons my-3">
+          <a href="https://www.facebook.com/share/1AvuDM1UpV/" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/munmun_hazra5?igsh=YzljYTk1ODg3Zg==" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Munmun Hazra. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Image Popup Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="" class="modal-img" id="modalImage" alt="Full Image">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Custom JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animation for gallery images
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('.gallery-img');
+      images.forEach((img, index) => {
+        setTimeout(() => {
+          img.classList.add('animate');
+          img.style.transform = `translateY(${index * 10}px)`;
+        }, index * 100);
+      });
+
+      // Image click to open modal
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          const modalImg = document.getElementById('modalImage');
+          modalImg.src = img.src;
+          const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+          modal.show();
+        });
+      });
+
+      // Re-animate images when switching tabs
+      const tabs = document.querySelectorAll('.nav-link');
+      tabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', (e) => {
+          const targetPane = document.querySelector(e.target.dataset.bsTarget);
+          const paneImages = targetPane.querySelectorAll('.gallery-img');
+          paneImages.forEach((img, index) => {
+            img.classList.remove('animate');
+            setTimeout(() => {
+              img.classList.add('animate');
+              img.style.transform = `translateY(${index * 10}px)`;
+            }, index * 100);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+</html>
